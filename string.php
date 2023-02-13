@@ -62,7 +62,17 @@
 
                     echo "sha-1 value of credential is :" . sha1($r_trim) . "<br>";
 
+                    echo "strlen functoin used here" . strlen($str) . "<br>" ;
 
+                    echo "compare stinrg is used here:" . strcmp($st1 ,$str1) . "<br>";
+
+                    echo "string will converted into upper case :". strtoupper($r_trim) . "<br>" ;
+
+                    $upr_case = "HELLO WE ARE ANON TEAM" ;
+
+                    echo "string will converted into lower case :" . strtolower($upr_case) . "<br>"; 
+
+                    echo "reverse stinrg functoin used here:" . strrev($upr_case). "<br>";
 
 
 
