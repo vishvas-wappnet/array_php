@@ -57,16 +57,19 @@ echo "------------------------PHP ARRAY FUNCTION--------------------" . "<br>";
 
                     $array_combine = array_combine($names_array ,$age);
                     print_r($array_combine). "</br>"; //printing  combined array 
+                    echo "<br>";
 
 
                    "<br>"; echo "diff  function array :" . "<br>" ; //it find difference between twov array valies
                     $diff_array = array_diff($age_array, $age_array_2);
                     print_r($diff_array);
+                    echo "<br>";
 
 
                     echo "flip  function array :" . "<br>" ; 
                     $flip = array_flip($diff_array);
                     print_r($flip);
+                    echo "<br>";
 
                     echo "key_exixst  function array :" . "<br>" ; 
                     if(array_key_exists("Vishvasss",$names_array))
@@ -89,11 +92,43 @@ echo "------------------------PHP ARRAY FUNCTION--------------------" . "<br>";
                         $color_2=array("blue","yellow");
 
                         print_r(array_merge($color_1 , $color_2)); //it will merge two array color_1 & color_2 
-
+                        echo "<br>";
 
                         echo "pad  function array :" . "<br>" ; 
+                        print_r(array_pad($color_1 , 3, "dark_yellow"));
+                        echo "<br>";
 
-                        print_r(array_pad($color_1 , 3, "dark_yellow") )
 
+                        echo "pop  function array :" . "<br>" ; 
+                        print_r(array_pop($color_1));  
+                        echo "<br>";
+
+
+                        echo "product array  function  :" . "<br>" ; 
+                        $user_salary=array(500,10);
+                        echo "total salary of all users salary is: " .  "\r\n" . (array_product($user_salary)). "<br>";
                     
+                        echo "shift array  function  :" . "<br>" ; 
+                        echo  "first element removed using shift function  & deleted element is :" . array_shift($color_2);
+
+
+                        echo "slice array  function  :" . "<br>" ;
+                        $names_array_4 = array(" dixita" , "jayprakash" , "Vishvas" , "Ronak" , "Isha" , "Arpit");
+                        print_r(array_slice($names_array_4 , 1 ,1));
+                         echo "<br>";
+
+
+                        echo "slice sum  function  :" . "<br>" ;    
+                        $user_salary_2=array(5000,15000,25000);
+                        echo "total salary of users is :" . array_sum($user_salary_2);
+   
+                        echo "<br>";
+
+                        echo "array_values Function";
+                        print_r($age_array);
+                        echo "<br>";
+
+                        echo "replace arry  Function " . "<br>";
+                        print_r(array_replace( $color_1 ,$color_2));
+
 ?>
